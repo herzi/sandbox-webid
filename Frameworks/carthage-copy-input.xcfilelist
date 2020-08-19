@@ -1,0 +1,2 @@
+$(SRCROOT)/Carthage/Build/iOS/AhoyKit.framework
+$(SRCROOT)/Carthage/Build/iOS/AhoyWebRTC.framework

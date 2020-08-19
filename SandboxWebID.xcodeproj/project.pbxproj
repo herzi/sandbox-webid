@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,25 @@
 		CF90B46324EAC37800AEBEF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF90B46224EAC37800AEBEF5 /* Assets.xcassets */; };
 		CF90B46624EAC37800AEBEF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF90B46524EAC37800AEBEF5 /* Preview Assets.xcassets */; };
 		CF90B46924EAC37800AEBEF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF90B46724EAC37800AEBEF5 /* LaunchScreen.storyboard */; };
+		CF90B47A24ED70D300AEBEF5 /* WebIdIosSdk-2.2.0.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF90B47824EBDB8A00AEBEF5 /* WebIdIosSdk-2.2.0.xcframework */; };
+		CF90B47B24ED70D300AEBEF5 /* WebIdIosSdk-2.2.0.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF90B47824EBDB8A00AEBEF5 /* WebIdIosSdk-2.2.0.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CF90B48424ED732400AEBEF5 /* AhoyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF90B48224ED732400AEBEF5 /* AhoyKit.framework */; };
+		CF90B48524ED732400AEBEF5 /* AhoyWebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF90B48324ED732400AEBEF5 /* AhoyWebRTC.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF90B47624EBD79400AEBEF5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CF90B47B24ED70D300AEBEF5 /* WebIdIosSdk-2.2.0.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CF90B45924EAC37500AEBEF5 /* SandboxWebID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandboxWebID.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +42,11 @@
 		CF90B46524EAC37800AEBEF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF90B46824EAC37800AEBEF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF90B46A24EAC37800AEBEF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF90B47824EBDB8A00AEBEF5 /* WebIdIosSdk-2.2.0.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "WebIdIosSdk-2.2.0.xcframework"; sourceTree = "<group>"; };
+		CF90B47F24ED721600AEBEF5 /* carthage-copy-output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = "carthage-copy-output.xcfilelist"; sourceTree = "<group>"; };
+		CF90B48024ED721600AEBEF5 /* carthage-copy-input.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = "carthage-copy-input.xcfilelist"; sourceTree = "<group>"; };
+		CF90B48224ED732400AEBEF5 /* AhoyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AhoyKit.framework; path = Carthage/Build/iOS/AhoyKit.framework; sourceTree = SOURCE_ROOT; };
+		CF90B48324ED732400AEBEF5 /* AhoyWebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AhoyWebRTC.framework; path = Carthage/Build/iOS/AhoyWebRTC.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF90B48424ED732400AEBEF5 /* AhoyKit.framework in Frameworks */,
+				CF90B47A24ED70D300AEBEF5 /* WebIdIosSdk-2.2.0.xcframework in Frameworks */,
+				CF90B48524ED732400AEBEF5 /* AhoyWebRTC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				CF90B45B24EAC37500AEBEF5 /* SandboxWebID */,
+				CF90B47024EAC38900AEBEF5 /* Frameworks */,
 				CF90B45A24EAC37500AEBEF5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +102,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CF90B47024EAC38900AEBEF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF90B48124ED731000AEBEF5 /* Carthage */,
+				CF90B48024ED721600AEBEF5 /* carthage-copy-input.xcfilelist */,
+				CF90B47F24ED721600AEBEF5 /* carthage-copy-output.xcfilelist */,
+				CF90B47824EBDB8A00AEBEF5 /* WebIdIosSdk-2.2.0.xcframework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF90B48124ED731000AEBEF5 /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				CF90B48224ED732400AEBEF5 /* AhoyKit.framework */,
+				CF90B48324ED732400AEBEF5 /* AhoyWebRTC.framework */,
+			);
+			path = Carthage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +129,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF90B46D24EAC37800AEBEF5 /* Build configuration list for PBXNativeTarget "SandboxWebID" */;
 			buildPhases = (
+				CF90B47124EBD5A700AEBEF5 /* WebID: Download and Extract */,
+				CF90B47724EBD8B100AEBEF5 /* Carthage: Build */,
 				CF90B45524EAC37500AEBEF5 /* Sources */,
 				CF90B45624EAC37500AEBEF5 /* Frameworks */,
+				CF90B47C24ED70E100AEBEF5 /* Carthage: Copy Frameworks */,
 				CF90B45724EAC37500AEBEF5 /* Resources */,
+				CF90B47624EBD79400AEBEF5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +191,67 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CF90B47124EBD5A700AEBEF5 /* WebID: Download and Extract */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "WebID: Download and Extract";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/zsh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nset -o nounset\n\necho \"WebID: Download and Extract\"\n\ncd \"${DERIVED_FILE_DIR}\"\ntest -f 'WebIdIosSdk.framework-v2.2.0.zip' || \\\n    curl -O 'https://api.webid-solutions.de/releases/ios/xcframework/internal/2.2.0/WebIdIosSdk.framework-v2.2.0.zip'\ntest -d 'WebIdIosSdk-2.2.0.xcframework' || \\\n    unzip 'WebIdIosSdk.framework-v2.2.0.zip'\ntest -d '${SRCROOT}/Frameworks/WebIdIosSdk-2.2.0.xcframework' || \\\n    ditto 'WebIdIosSdk-2.2.0.xcframework' \"${SRCROOT}/Frameworks/WebIdIosSdk-2.2.0.xcframework\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF90B47724EBD8B100AEBEF5 /* Carthage: Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Carthage: Build";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/zsh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n. ~/.zshrc\n\ncarthage build --cache-builds --no-use-binaries --platform iOS\n";
+			showEnvVarsInLog = 0;
+		};
+		CF90B47C24ED70E100AEBEF5 /* Carthage: Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/Frameworks/carthage-copy-input.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "Carthage: Copy Frameworks";
+			outputFileListPaths = (
+				"$(SRCROOT)/Frameworks/carthage-copy-output.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/zsh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n. ~/.zshrc\n\ncarthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CF90B45524EAC37500AEBEF5 /* Sources */ = {
@@ -288,6 +400,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SandboxWebID/Preview Content\"";
 				DEVELOPMENT_TEAM = 38R2LLP8AF;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SandboxWebID/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -308,6 +424,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SandboxWebID/Preview Content\"";
 				DEVELOPMENT_TEAM = 38R2LLP8AF;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SandboxWebID/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
